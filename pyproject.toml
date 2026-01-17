@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openapi-inspect"
+version = "0.1.0"
+description = "OpenAPI YAML CLI Explorer"
+authors = [
+  { name = "Nicklas Wiegandt" }
+]
+dependencies = [
+  "pyyaml"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest"
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+  "tests"
+]
+
